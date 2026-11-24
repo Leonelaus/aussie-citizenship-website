@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+:root,
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #1c1915;
+  --muted: #534e46;
+  --card: #fffcf8;
+  --card-border: #e6dfd4;
+  --navy: #16324f;
+  --navy-foreground: #f7f4ef;
+  --sand: #f6f3ee;
+  --sand-deep: #efe8dc;
+  --line: #e4ddd3;
+  --gold: #6f5228;
+  --gold-soft: #c4a36a;
+  --focus: #16324f;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --background: #121211;
+  --foreground: #f4f0e8;
+  --muted: #c8c1b6;
+  --card: #1c1b19;
+  --card-border: #34322e;
+  --navy: #efe6d6;
+  --navy-foreground: #161513;
+  --sand: #191816;
+  --sand-deep: #23211e;
+  --line: #34322e;
+  --gold: #e2c48a;
+  --gold-soft: #d4b483;
+  --focus: #e2c48a;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-sand: var(--sand);
+  --color-sand-deep: var(--sand-deep);
+  --color-line: var(--line);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --font-sans: var(--font-source-sans);
+  --font-display: var(--font-newsreader);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-source-sans), "Source Sans 3", "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #d9e3ee;
+  color: #16324f;
+}
+
+[data-theme="dark"] ::selection {
+  background: #3d3832;
+  color: #f4f0e8;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 80;
+  border-radius: 999px;
+  background: var(--navy);
+  color: var(--navy-foreground);
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.font-display {
+  font-family: var(--font-newsreader), Georgia, "Times New Roman", serif;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
