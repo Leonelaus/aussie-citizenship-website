@@ -12,9 +12,10 @@ export function SiteFooter() {
             published by {siteConfig.publisher.legalName}, an individual sole
             trader in {siteConfig.publisher.state}, {siteConfig.publisher.country}{" "}
             (ABN {siteConfig.publisher.abn}).
-            Not affiliated with, or endorsed by, the Australian Government or
-            the Department of Home Affairs. This is not a government website,
-            and it does not promise a test result.
+            Aussie Citizenship is an independent educational application and is
+            not affiliated with, endorsed by, or operated by the Australian
+            Government or the Department of Home Affairs. This is not a
+            government website, and it does not promise a test result.
           </p>
         </div>
         <nav aria-label="Footer">
