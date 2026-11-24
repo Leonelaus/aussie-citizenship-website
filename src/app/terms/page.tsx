@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Attribution } from "@/components/attribution";
 import { ExternalLink } from "@/components/external-link";
 import { PageHeader } from "@/components/page-header";
 import { officialResources, siteConfig } from "@/lib/site";
@@ -22,7 +23,7 @@ export default function TermsPage() {
       <PageHeader
         eyebrow="Draft — not yet in force"
         title="Terms of Use"
-        lede="These terms are a draft for review before the app is released. They are not legal advice. A qualified lawyer in Australia should review them before they are treated as final."
+        lede="These terms are a draft. They are not legal advice, and a lawyer has not reviewed them. Do not treat them as final."
       />
       <p className="mt-6 text-sm text-muted">
         Effective date: {siteConfig.effectiveDate}. Last reviewed {siteConfig.lastReviewed}.
@@ -37,12 +38,13 @@ export default function TermsPage() {
             {siteConfig.publisher.legalName}, an individual sole trader in{" "}
             {siteConfig.publisher.state}, {siteConfig.publisher.country} (ABN{" "}
             {siteConfig.publisher.abn}), publishes
-            the Aussie Citizenship website and study aid. By using this website
-            you agree to this draft as a description of how the site may be used
-            while it is under review. If you do not agree, please do not use the
-            site. The effective date is {siteConfig.effectiveDate.toLowerCase()}.
-            A final set of terms will be published before the app is offered for
-            download.
+            the Aussie Citizenship website and the free iPhone study aid. By using
+            this website you agree to this draft as a description of how the site
+            may be used while it is under review. If you do not agree, please do
+            not use the site. The effective date is{" "}
+            {siteConfig.effectiveDate.toLowerCase()}. The app links to this page
+            and states that the website policies are drafts. These terms are not
+            in force until that date.
           </p>
         </section>
 
@@ -51,7 +53,7 @@ export default function TermsPage() {
             Educational purpose
           </h2>
           <p className="mt-4">
-            The website and the coming app are for general education and
+            The website and the free iPhone app are for general education and
             personal study. They are not legal advice, migration advice, or
             government advice. Citizenship law, test rules, fees, and
             application steps can change. You are responsible for checking the
@@ -106,12 +108,15 @@ export default function TermsPage() {
             App availability
           </h2>
           <p className="mt-4">
-            The version described on this website is free. It does not include
-            active in-app purchases, and this website has no payment checkout.
-            The iOS app is not available for download. “Coming Soon on the App
-            Store” means a release is intended. It is not a store listing, a
-            pre-order, or a promise of a release date. Do not pay anyone who
-            claims to sell access to the app.
+            The version described on this website is the free iPhone app. The
+            initial release is for iPhone. It includes 30 practice questions and
+            20-question mock exams. Study progress and exam results stay on the
+            device. The app does not ask for an account. It does not include
+            active in-app purchases, a restore, or a subscription, and this
+            website has no payment checkout. “Coming Soon on the App Store”
+            means a public listing is not linked from this website. It is not a
+            store listing, a pre-order, or a promise of a release date. Do not
+            pay anyone who claims to sell access to the app.
           </p>
         </section>
 
@@ -132,12 +137,18 @@ export default function TermsPage() {
           </h2>
           <p className="mt-4">
             The website’s original text, layout, and illustrations are owned by{" "}
-            {siteConfig.publisher.legalName}. The Australian National Flag is shown to
-            identify Australia. The Sydney Opera House drawing is an original
-            geometric illustration, not a photograph and not an official logo.
-            Government names and publications remain the property of their
-            respective owners.
+            {siteConfig.publisher.legalName}. The Australian National Flag on this
+            website is shown to identify Australia. The Sydney Opera House drawing
+            on this website is an original geometric illustration, not a photograph
+            and not an official logo. Government names and publications remain the
+            property of their respective owners.
           </p>
+          <h3 className="mt-8 font-display text-2xl tracking-tight text-foreground">
+            Sources and attribution
+          </h3>
+          <div className="mt-4">
+            <Attribution />
+          </div>
         </section>
 
         <section id="liability" className="scroll-mt-28">

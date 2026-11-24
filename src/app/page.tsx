@@ -27,10 +27,11 @@ export default function HomePage() {
               Prepare for the Australian citizenship test with calm, clear study.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-muted">
-              Aussie Citizenship is a mobile study aid for people preparing for
-              the Australian citizenship test. It helps you revise at your own
-              pace. It is not affiliated with, or endorsed by, the Australian
-              Government or the Department of Home Affairs.
+              Aussie Citizenship is a free iPhone study aid for people preparing
+              for the Australian citizenship test. The current version has 30
+              free practice questions and 20-question mock exams. It is not
+              affiliated with, or endorsed by, the Australian Government or the
+              Department of Home Affairs.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -47,8 +48,9 @@ export default function HomePage() {
               </a>
             </div>
             <p className="mt-4 max-w-xl text-sm leading-6 text-muted">
-              No download is available yet. Using the app does not promise a
-              pass, a particular mark, or a successful citizenship application.
+              This website does not offer a download yet. Using the app does not
+              promise a pass, a particular mark, or a successful citizenship
+              application.
             </p>
           </div>
           <div className="relative">

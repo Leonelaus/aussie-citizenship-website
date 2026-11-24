@@ -20,8 +20,9 @@ export function ComingSoon({ compact = false }: { compact?: boolean }) {
               Coming Soon on the App Store
             </h2>
             <p className="mt-4 max-w-xl text-lg leading-8 text-muted">
-              Aussie Citizenship is being prepared for iPhone and iPad. There is
-              no download yet, and this page does not link to a store listing.
+              The first release is for iPhone. It is free, with 30 practice
+              questions and 20-question mock exams. This page does not link to
+              a store listing.
             </p>
             <div
               className="mt-6 inline-flex items-center gap-3 rounded-2xl bg-navy px-4 py-3 text-navy-foreground"
@@ -40,9 +41,9 @@ export function ComingSoon({ compact = false }: { compact?: boolean }) {
             </div>
             {!compact ? (
               <p className="mt-4 max-w-xl text-sm leading-6 text-muted">
-                When the app is released, this website will be updated with the
-                genuine App Store link. Until then, please do not rely on any
-                unofficial download.
+                When Apple publishes a listing, this website will be updated with
+                the genuine App Store link. Until then, please do not rely on
+                any unofficial download.
               </p>
             ) : null}
           </div>
@@ -56,9 +57,9 @@ export function ComingSoon({ compact = false }: { compact?: boolean }) {
                 Study at your own pace.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-muted">
-                <li className="rounded-xl bg-sand px-3 py-2">Practice questions</li>
-                <li className="rounded-xl bg-sand px-3 py-2">Mock tests</li>
-                <li className="rounded-xl bg-sand px-3 py-2">Your progress</li>
+                <li className="rounded-xl bg-sand px-3 py-2">30 practice questions</li>
+                <li className="rounded-xl bg-sand px-3 py-2">20-question mock exams</li>
+                <li className="rounded-xl bg-sand px-3 py-2">Progress on this iPhone</li>
               </ul>
             </div>
           </div>

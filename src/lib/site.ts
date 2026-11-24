@@ -29,7 +29,7 @@ export const siteConfig = {
   name: "Aussie Citizenship",
   title: "Aussie Citizenship | Independent citizenship test study aid",
   description:
-    "Aussie Citizenship is an independent mobile study aid for people preparing for the Australian citizenship test. It is not affiliated with or endorsed by the Australian Government or the Department of Home Affairs.",
+    "Aussie Citizenship is an independent iPhone study aid for people preparing for the Australian citizenship test. The free version has 30 practice questions and 20-question mock exams. It is not affiliated with or endorsed by the Australian Government or the Department of Home Affairs.",
   url: resolveSiteUrl(process.env.NEXT_PUBLIC_SITE_URL),
   contactEmail: resolveEmail(process.env.NEXT_PUBLIC_CONTACT_EMAIL),
   locale: "en_AU",
@@ -59,6 +59,15 @@ export const legalItems = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Use" },
 ] as const;
+
+export const attribution = {
+  bookletTitle: "Australian Citizenship: Our Common Bond",
+  bookletHref:
+    "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/our-common-bond",
+  bookletCopyright: "© Commonwealth of Australia 2020",
+  licenceName: "Creative Commons Attribution 4.0",
+  licenceHref: "https://creativecommons.org/licenses/by/4.0/",
+} as const;
 
 export const officialResources = [
   {

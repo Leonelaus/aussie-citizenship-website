@@ -59,7 +59,7 @@ export default function ContactPage() {
         </dl>
         <h2 className="mt-8 text-lg font-semibold">You can write about</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-muted">
-          <li>Questions about the website or the coming app.</li>
+          <li>Questions about the website or the free iPhone app.</li>
           <li>Privacy questions about this draft policy.</li>
           <li>Corrections to public website copy.</li>
         </ul>

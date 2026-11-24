@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Attribution } from "@/components/attribution";
 import { ExternalLink } from "@/components/external-link";
 import { PageHeader } from "@/components/page-header";
 import { officialResources } from "@/lib/site";
@@ -58,7 +59,7 @@ export default function AboutPage() {
           <h2 className="font-display text-2xl tracking-tight">What it is for</h2>
           <ul className="mt-4 list-disc space-y-3 pl-5 leading-7 text-muted">
             <li>Personal revision before the citizenship test.</li>
-            <li>Practice questions and timed mock tests.</li>
+            <li>30 free practice questions and 20-question mock exams on iPhone.</li>
             <li>Seeing which topics you may want to read again.</li>
             <li>Reading supporting explanations in more than one language.</li>
           </ul>
@@ -70,6 +71,7 @@ export default function AboutPage() {
             <li>Legal, migration, or citizenship advice.</li>
             <li>A promise that you will pass, or that an application will succeed.</li>
             <li>A substitute for instructions on an official government website.</li>
+            <li>A purchase. This version does not offer one.</li>
           </ul>
         </article>
       </section>
@@ -90,6 +92,15 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section className="mt-6 rounded-[2rem] border border-line bg-card p-6 sm:p-8">
+        <h2 className="font-display text-3xl tracking-tight">
+          Sources and attribution
+        </h2>
+        <div className="mt-4">
+          <Attribution />
+        </div>
       </section>
     </div>
   );
