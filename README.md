@@ -36,7 +36,7 @@ The site is a standard Next.js App Router project and can be deployed on Vercel�
 
 | Name | Example | Purpose |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.vercel.app` | Canonical URLs, sitemap, and `robots.txt` |
+| `NEXT_PUBLIC_SITE_URL` | `https://aussie-citizenship.vercel.app` | Canonical URLs, sitemap, and `robots.txt` |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | `ausiecitizenship.support@gmail.com` | Contact, support, footer, and draft legal pages |
 
 5. Deploy. Vercel will give you a `*.vercel.app` address. You can add a custom domain later in the project settings.
@@ -47,13 +47,10 @@ Copy `.env.example` to `.env.local` for local values. `.env.local` is gitignored
 copy .env.example .env.local
 ```
 
-Use a full origin such as `https://aussie-citizenship.vercel.app`, with `https://` and no path or trailing slash.
+The live origin is `https://aussie-citizenship.vercel.app`, with no path or trailing slash.
 
-## Placeholders to replace before you publish
+## Details still to confirm before treating the legal pages as final
 
-The site builds and runs with safe placeholders. Replace these before you share it:
-
-- **Public site URL.** The default is `https://example.com`. Set `NEXT_PUBLIC_SITE_URL` so the sitemap, `robots.txt`, and canonical links use your real address.
 - **Operator legal name.** The draft Terms and Privacy Policy say the legal name, any ABN, and any postal address are still to be confirmed. Add them in `src/app/privacy/page.tsx` and `src/app/terms/page.tsx` after a lawyer reviews the drafts.
 - **Copyright year.** It is set to 2026 in `src/lib/site.ts`.
 - **App Store link.** The site says “Coming Soon on the App Store” and does not include a download link. Add a real App Store URL only after Apple has published the listing.
@@ -67,4 +64,4 @@ The site builds and runs with safe placeholders. Replace these before you share 
 - `sitemap.xml`, `robots.txt`, a web manifest, and page metadata
 - Australian English copy, with a clear independence and no-pass-promise disclaimer
 
-Nothing is deployed or committed by the setup itself.
+The live site is https://aussie-citizenship.vercel.app.

@@ -1,23 +1,22 @@
 /**
  * Public site settings.
- * The support email is the production contact address.
- * The public site URL is still a placeholder until NEXT_PUBLIC_SITE_URL is set.
+ * The live site origin and support email are the production values.
  */
 
-const PLACEHOLDER_SITE_URL = "https://example.com";
+const SITE_URL = "https://aussie-citizenship.vercel.app";
 const SUPPORT_EMAIL = "ausiecitizenship.support@gmail.com";
 
 function resolveSiteUrl(value: string | undefined): string {
-  const candidate = value?.trim() || PLACEHOLDER_SITE_URL;
+  const candidate = value?.trim() || SITE_URL;
 
   try {
     const url = new URL(candidate);
     if (url.protocol !== "https:" && url.protocol !== "http:") {
-      return PLACEHOLDER_SITE_URL;
+      return SITE_URL;
     }
     return url.origin;
   } catch {
-    return PLACEHOLDER_SITE_URL;
+    return SITE_URL;
   }
 }
 
@@ -37,8 +36,6 @@ export const siteConfig = {
   copyrightYear: 2026,
   lastReviewed: "24 November 2026",
 } as const;
-
-export const isPlaceholderSiteUrl = siteConfig.url === PLACEHOLDER_SITE_URL;
 
 export const navItems = [
   { href: "/", label: "Home" },
