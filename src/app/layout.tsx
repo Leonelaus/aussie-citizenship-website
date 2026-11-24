@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  authors: [{ name: siteConfig.name }],
+  authors: [{ name: siteConfig.publisher.legalName }],
   keywords: [
     "Australian citizenship test",
     "citizenship study aid",
@@ -71,6 +71,16 @@ const jsonLd = {
   url: siteConfig.url,
   description: siteConfig.description,
   inLanguage: "en-AU",
+  publisher: {
+    "@type": "Person",
+    name: siteConfig.publisher.legalName,
+    taxID: siteConfig.publisher.abn,
+    address: {
+      "@type": "PostalAddress",
+      addressRegion: siteConfig.publisher.state,
+      addressCountry: "AU",
+    },
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

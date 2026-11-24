@@ -51,8 +51,8 @@ The live origin is `https://aussie-citizenship.vercel.app`, with no path or trai
 
 ## Details still to confirm before treating the legal pages as final
 
-- **Operator legal name.** The draft Terms and Privacy Policy say the legal name, any ABN, and any postal address are still to be confirmed. Add them in `src/app/privacy/page.tsx` and `src/app/terms/page.tsx` after a lawyer reviews the drafts.
-- **Copyright year.** It is set to 2026 in `src/lib/site.ts`.
+- **Effective date.** The drafts name Duy Dam Ho, ABN 81 644 321 234, keep support email for 12 months, and select Queensland law subject to applicable Australian law. They are not in force, and a lawyer has not reviewed them. The effective date stays pending until the policies are ready for publication.
+- **Copyright year.** It is set to 2026 in `src/lib/site.ts`, in the name of Duy Dam Ho.
 - **App Store link.** The site says “Coming Soon on the App Store” and does not include a download link. Add a real App Store URL only after Apple has published the listing.
 - **Languages and question counts.** The copy does not list languages or a question total. Add those only when they match the released app.
 - **Privacy and terms.** Both pages are labelled drafts. They describe this static website only. Do not treat them as final, and do not add claims about app data collection until the app’s behaviour is confirmed.

@@ -8,10 +8,13 @@ export function SiteFooter() {
         <div className="max-w-md">
           <p className="font-display text-2xl tracking-tight">{siteConfig.name}</p>
           <p className="mt-3 text-sm leading-6 text-muted">
-            An independent study aid for the Australian citizenship test. Not
-            affiliated with, or endorsed by, the Australian Government or the
-            Department of Home Affairs. This is not a government website, and it
-            does not promise a test result.
+            An independent study aid for the Australian citizenship test,
+            published by {siteConfig.publisher.legalName}, an individual sole
+            trader in {siteConfig.publisher.state}, {siteConfig.publisher.country}{" "}
+            (ABN {siteConfig.publisher.abn}).
+            Not affiliated with, or endorsed by, the Australian Government or
+            the Department of Home Affairs. This is not a government website,
+            and it does not promise a test result.
           </p>
         </div>
         <nav aria-label="Footer">
@@ -55,7 +58,8 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-line">
         <p className="mx-auto w-full max-w-6xl px-5 py-5 text-sm text-muted sm:px-8">
-          © {siteConfig.copyrightYear} {siteConfig.name}. All rights reserved.
+          © {siteConfig.copyrightYear} {siteConfig.publisher.legalName}.{" "}
+          {siteConfig.name}. All rights reserved.
         </p>
       </div>
     </footer>

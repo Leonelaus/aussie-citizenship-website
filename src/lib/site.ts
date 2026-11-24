@@ -35,6 +35,17 @@ export const siteConfig = {
   locale: "en_AU",
   copyrightYear: 2026,
   lastReviewed: "24 November 2026",
+  effectiveDate: "Pending approval",
+  publisher: {
+    legalName: "Duy Dam Ho",
+    kind: "Individual / Sole Trader",
+    country: "Australia",
+    state: "Queensland",
+    abn: "81 644 321 234",
+  },
+  governingLaw:
+    "the laws of Queensland, Australia, subject to applicable Australian law, including the Australian Consumer Law",
+  emailRetention: "12 months",
 } as const;
 
 export const navItems = [

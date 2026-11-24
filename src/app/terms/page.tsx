@@ -22,9 +22,11 @@ export default function TermsPage() {
       <PageHeader
         eyebrow="Draft — not yet in force"
         title="Terms of Use"
-        lede="These terms are a draft for review before the app is released. They are not legal advice. Have a qualified lawyer in Australia review them, and add the operator’s legal name, before you rely on them."
+        lede="These terms are a draft for review before the app is released. They are not legal advice. A qualified lawyer in Australia should review them before they are treated as final."
       />
-      <p className="mt-6 text-sm text-muted">Last reviewed {siteConfig.lastReviewed}.</p>
+      <p className="mt-6 text-sm text-muted">
+        Effective date: {siteConfig.effectiveDate}. Last reviewed {siteConfig.lastReviewed}.
+      </p>
 
       <div className="mt-10 space-y-10 leading-7 text-muted">
         <section id="agreement" className="scroll-mt-28">
@@ -32,10 +34,15 @@ export default function TermsPage() {
             Using the website
           </h2>
           <p className="mt-4">
-            By using this website you agree to this draft as a description of
-            how the site may be used while it is under review. If you do not
-            agree, please do not use the site. A final set of terms will be
-            published before the app is offered for download.
+            {siteConfig.publisher.legalName}, an individual sole trader in{" "}
+            {siteConfig.publisher.state}, {siteConfig.publisher.country} (ABN{" "}
+            {siteConfig.publisher.abn}), publishes
+            the Aussie Citizenship website and study aid. By using this website
+            you agree to this draft as a description of how the site may be used
+            while it is under review. If you do not agree, please do not use the
+            site. The effective date is {siteConfig.effectiveDate.toLowerCase()}.
+            A final set of terms will be published before the app is offered for
+            download.
           </p>
         </section>
 
@@ -99,6 +106,8 @@ export default function TermsPage() {
             App availability
           </h2>
           <p className="mt-4">
+            The version described on this website is free. It does not include
+            active in-app purchases, and this website has no payment checkout.
             The iOS app is not available for download. “Coming Soon on the App
             Store” means a release is intended. It is not a store listing, a
             pre-order, or a promise of a release date. Do not pay anyone who
@@ -122,9 +131,8 @@ export default function TermsPage() {
             Intellectual property
           </h2>
           <p className="mt-4">
-            The website’s original text, layout, and illustrations are owned by
-            the operator of Aussie Citizenship, whose legal name is still to be
-            confirmed on this page. The Australian National Flag is shown to
+            The website’s original text, layout, and illustrations are owned by{" "}
+            {siteConfig.publisher.legalName}. The Australian National Flag is shown to
             identify Australia. The Sydney Opera House drawing is an original
             geometric illustration, not a photograph and not an official logo.
             Government names and publications remain the property of their
@@ -139,11 +147,12 @@ export default function TermsPage() {
           <p className="mt-4">
             The website is provided for general study information. To the
             extent permitted by the Australian Consumer Law and any other law
-            that cannot be excluded, the operator does not accept liability for
+            that cannot be excluded, the publisher does not accept liability for
             loss arising from reliance on this draft website, including a test
-            result or an application outcome. This clause is a draft and must
-            be reviewed by a lawyer before it is treated as final. Nothing in
-            these terms excludes rights that cannot legally be excluded.
+            result or an application outcome. This clause has not been reviewed by a lawyer. Nothing in
+            these terms excludes, restricts, or modifies rights under the
+            Australian Consumer Law, or any other rights that cannot legally be
+            excluded.
           </p>
         </section>
 
@@ -152,9 +161,11 @@ export default function TermsPage() {
             Governing law
           </h2>
           <p className="mt-4">
-            These draft terms are intended to be read under the laws of
-            Australia. The operator’s home state or territory, and the courts
-            that should hear a dispute, will be named in the final terms.
+            These draft terms are governed by {siteConfig.governingLaw}. The
+            courts of {siteConfig.publisher.state} are the selected forum. That
+            selection does not limit a right to bring a claim in another court
+            where the Australian Consumer Law, or any other applicable Australian
+            law, allows it. These terms are not in force until the effective date.
           </p>
         </section>
 
@@ -164,7 +175,9 @@ export default function TermsPage() {
           </h2>
           <p className="mt-4">
             This draft may be replaced or corrected at any time. The date above
-            shows when this copy was last reviewed. Questions can be sent to{" "}
+            shows when this copy was last reviewed. Support email is kept for{" "}
+            {siteConfig.emailRetention}, as described in the draft Privacy Policy.
+            Questions can be sent to{" "}
             <a
               href={`mailto:${siteConfig.contactEmail}`}
               className="font-semibold text-foreground underline decoration-gold-soft underline-offset-4"

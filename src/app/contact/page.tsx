@@ -33,6 +33,30 @@ export default function ContactPage() {
         >
           {siteConfig.contactEmail}
         </a>
+        <dl className="mt-8 space-y-3 text-sm leading-6">
+          <div>
+            <dt className="font-semibold">Publisher</dt>
+            <dd className="text-muted">
+              {siteConfig.publisher.legalName}, an individual sole trader in{" "}
+              {siteConfig.publisher.state}, {siteConfig.publisher.country}
+            </dd>
+          </div>
+          <div>
+            <dt className="font-semibold">ABN</dt>
+            <dd className="text-muted">{siteConfig.publisher.abn}</dd>
+          </div>
+          <div>
+            <dt className="font-semibold">Website</dt>
+            <dd>
+              <a
+                href={siteConfig.url}
+                className="text-muted underline-offset-4 hover:text-foreground hover:underline"
+              >
+                {siteConfig.url}
+              </a>
+            </dd>
+          </div>
+        </dl>
         <h2 className="mt-8 text-lg font-semibold">You can write about</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-muted">
           <li>Questions about the website or the coming app.</li>
