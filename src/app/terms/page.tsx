@@ -5,14 +5,14 @@ import { PageHeader } from "@/components/page-header";
 import { officialResources, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Terms of Use (draft)",
+  title: "Terms of Use",
   description:
-    "Draft terms of use for the Aussie Citizenship website and study aid, including educational disclaimers and a statement that the project is not a government service.",
+    "Terms of Use for the Aussie Citizenship website and free iPhone app. Australian Consumer Law guarantees are preserved. Not a government service.",
   alternates: { canonical: "/terms" },
   openGraph: {
-    title: "Terms of Use (draft)",
+    title: "Terms of Use",
     description:
-      "Draft terms for the independent Aussie Citizenship study aid. Not legal advice and not a promise of exam success.",
+      "Terms for the independent Aussie Citizenship study aid. Not legal advice and not a promise of exam success.",
     url: "/terms",
   },
 };
@@ -21,9 +21,9 @@ export default function TermsPage() {
   return (
     <div className="mx-auto w-full max-w-3xl px-5 py-14 sm:px-8 sm:py-16">
       <PageHeader
-        eyebrow="Draft — not yet in force"
+        eyebrow="Effective on the public launch date"
         title="Terms of Use"
-        lede="These terms are a draft. They are not legal advice, and a lawyer has not reviewed them. Do not treat them as final."
+        lede="These terms describe the website and the free iPhone app. They apply from the public launch date of version 1.0.0. They are not legal advice."
       />
       <p className="mt-6 text-sm text-muted">
         Effective date: {siteConfig.effectiveDate}. Last reviewed {siteConfig.lastReviewed}.
@@ -39,12 +39,9 @@ export default function TermsPage() {
             {siteConfig.publisher.state}, {siteConfig.publisher.country} (ABN{" "}
             {siteConfig.publisher.abn}), publishes
             the Aussie Citizenship website and the free iPhone study aid. By using
-            this website you agree to this draft as a description of how the site
-            may be used while it is under review. If you do not agree, please do
+            this website you agree to these terms. If you do not agree, please do
             not use the site. The effective date is{" "}
-            {siteConfig.effectiveDate.toLowerCase()}. The app links to this page
-            and states that the website policies are drafts. These terms are not
-            in force until that date.
+            {siteConfig.effectiveDate}. These terms apply from that date.
           </p>
         </section>
 
@@ -66,11 +63,9 @@ export default function TermsPage() {
             No government affiliation
           </h2>
           <p className="mt-4">
-            Aussie Citizenship is an independent study aid. It is not affiliated
-            with, endorsed by, sponsored by, or produced for the Australian
-            Government or the Department of Home Affairs. Names of government
-            bodies are used only to identify the public test you may be
-            preparing for.
+            Aussie Citizenship is an independent educational application and is
+            not affiliated with, endorsed by, or operated by the Australian
+            Government or the Department of Home Affairs.
           </p>
         </section>
 
@@ -108,15 +103,17 @@ export default function TermsPage() {
             App availability
           </h2>
           <p className="mt-4">
-            The version described on this website is the free iPhone app. The
-            initial release is for iPhone. It includes 30 practice questions and
-            20-question mock exams. Study progress and exam results stay on the
-            device. The app does not ask for an account. It does not include
-            active in-app purchases, a restore, or a subscription, and this
-            website has no payment checkout. “Coming Soon on the App Store”
-            means a public listing is not linked from this website. It is not a
-            store listing, a pre-order, or a promise of a release date. Do not
-            pay anyone who claims to sell access to the app.
+            The version described on this website is the free iPhone app. It
+            contains 500 practice questions. Version 1.0.0 makes 30 of them
+            accessible. The other 470 stay in the app and are not unlocked. Mock
+            exams use 20 questions drawn from the 30 accessible questions. Study
+            progress stays on the device. The app does not ask for an account.
+            It does not include advertising, tracking, or an active purchase, a
+            restore, or a subscription, and this website has no payment
+            checkout. “Coming Soon on the App Store” means a public listing is
+            not linked from this website. It is not a store listing, a
+            pre-order, or a promise of a release date. Do not pay anyone who
+            claims to sell access to the app.
           </p>
         </section>
 
@@ -141,7 +138,10 @@ export default function TermsPage() {
             website is shown to identify Australia. The Sydney Opera House drawing
             on this website is an original geometric illustration, not a photograph
             and not an official logo. Government names and publications remain the
-            property of their respective owners.
+            property of their respective owners. The photographic Sydney Opera
+            House image in the app icon is separate from the drawing on this
+            website. A licensing enquiry for that app image has not been made
+            and remains unresolved. This page does not clear it.
           </p>
           <h3 className="mt-8 font-display text-2xl tracking-tight text-foreground">
             Sources and attribution
@@ -153,17 +153,12 @@ export default function TermsPage() {
 
         <section id="liability" className="scroll-mt-28">
           <h2 className="font-display text-3xl tracking-tight text-foreground">
-            Warranties and liability
+            Australian Consumer Law
           </h2>
           <p className="mt-4">
-            The website is provided for general study information. To the
-            extent permitted by the Australian Consumer Law and any other law
-            that cannot be excluded, the publisher does not accept liability for
-            loss arising from reliance on this draft website, including a test
-            result or an application outcome. This clause has not been reviewed by a lawyer. Nothing in
-            these terms excludes, restricts, or modifies rights under the
-            Australian Consumer Law, or any other rights that cannot legally be
-            excluded.
+            Your Australian Consumer Law consumer guarantees are preserved.
+            Nothing in these terms excludes, restricts, or modifies a consumer
+            guarantee, right, or remedy that cannot legally be excluded.
           </p>
         </section>
 
@@ -172,11 +167,11 @@ export default function TermsPage() {
             Governing law
           </h2>
           <p className="mt-4">
-            These draft terms are governed by {siteConfig.governingLaw}. The
+            These terms are governed by {siteConfig.governingLaw}. The
             courts of {siteConfig.publisher.state} are the selected forum. That
             selection does not limit a right to bring a claim in another court
             where the Australian Consumer Law, or any other applicable Australian
-            law, allows it. These terms are not in force until the effective date.
+            law, allows it. These terms apply from the effective date.
           </p>
         </section>
 
@@ -185,9 +180,11 @@ export default function TermsPage() {
             Changes and contact
           </h2>
           <p className="mt-4">
-            This draft may be replaced or corrected at any time. The date above
-            shows when this copy was last reviewed. Support email is kept for{" "}
-            {siteConfig.emailRetention}, as described in the draft Privacy Policy.
+            These terms may be replaced or corrected at any time. The date above
+            shows when this copy was last reviewed. Support email is kept for a
+            maximum of {siteConfig.emailRetention} after the last message in the
+            thread, unless a longer period is required by law, as described in
+            the Privacy Policy.
             Questions can be sent to{" "}
             <a
               href={`mailto:${siteConfig.contactEmail}`}

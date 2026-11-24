@@ -20,9 +20,10 @@ export function ComingSoon({ compact = false }: { compact?: boolean }) {
               Coming Soon on the App Store
             </h2>
             <p className="mt-4 max-w-xl text-lg leading-8 text-muted">
-              The first release is for iPhone. It is free, with 30 practice
-              questions and 20-question mock exams. This page does not link to
-              a store listing.
+              The first release is a free iPhone app. It contains 500 practice
+              questions. Version 1.0.0 makes 30 accessible and leaves 470 locked.
+              Mock exams use 20 questions from those 30. This page does not link
+              to a store listing.
             </p>
             <div
               className="mt-6 inline-flex items-center gap-3 rounded-2xl bg-navy px-4 py-3 text-navy-foreground"
@@ -57,7 +58,7 @@ export function ComingSoon({ compact = false }: { compact?: boolean }) {
                 Study at your own pace.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-muted">
-                <li className="rounded-xl bg-sand px-3 py-2">30 practice questions</li>
+                <li className="rounded-xl bg-sand px-3 py-2">30 of 500 questions open</li>
                 <li className="rounded-xl bg-sand px-3 py-2">20-question mock exams</li>
                 <li className="rounded-xl bg-sand px-3 py-2">Progress on this iPhone</li>
               </ul>

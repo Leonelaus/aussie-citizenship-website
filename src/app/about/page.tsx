@@ -47,9 +47,9 @@ export default function AboutPage() {
             Independent educational purpose
           </h2>
           <p className="mt-4 leading-7 text-navy-foreground/85">
-            Aussie Citizenship is an independent study aid. It is not affiliated
-            with, endorsed by, or produced for the Australian Government or the
-            Department of Home Affairs.
+            Aussie Citizenship is an independent educational application and is
+            not affiliated with, endorsed by, or operated by the Australian
+            Government or the Department of Home Affairs.
           </p>
         </section>
       </div>
@@ -59,7 +59,7 @@ export default function AboutPage() {
           <h2 className="font-display text-2xl tracking-tight">What it is for</h2>
           <ul className="mt-4 list-disc space-y-3 pl-5 leading-7 text-muted">
             <li>Personal revision before the citizenship test.</li>
-            <li>30 free practice questions and 20-question mock exams on iPhone.</li>
+            <li>500 practice questions, with 30 accessible and 470 locked in version 1.0.0. Mock exams use 20 questions from the 30.</li>
             <li>Seeing which topics you may want to read again.</li>
             <li>Reading supporting explanations in more than one language.</li>
           </ul>

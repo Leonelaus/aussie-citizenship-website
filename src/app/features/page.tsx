@@ -6,12 +6,12 @@ import { features } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "30 free practice questions, 20-question mock exams, on-device progress, and multilingual support in the free Aussie Citizenship iPhone app.",
+    "500 practice questions, with 30 accessible and 470 locked, 20-question mock exams from the 30, and on-device progress in the free Aussie Citizenship iPhone app.",
   alternates: { canonical: "/features" },
   openGraph: {
     title: "Features",
     description:
-      "30 free practice questions, 20-question mock exams, and on-device progress in the free iPhone app.",
+      "500 practice questions, with 30 accessible and 470 locked, and 20-question mock exams drawn from the 30.",
     url: "/features",
   },
 };
@@ -22,7 +22,7 @@ export default function FeaturesPage() {
       <PageHeader
         eyebrow="Features"
         title="Study tools, described plainly."
-        lede="The free iPhone app includes 30 free practice questions, 20-question mock exams, progress stored on the device, and multilingual support. Each one is a revision aid. None of them is an official test, and none of them promises a result."
+        lede="The free iPhone app contains 500 practice questions. Version 1.0.0 makes 30 accessible and leaves 470 locked. Mock exams use 20 questions from those 30. Progress stays on the device. None of this is an official test, and none of it promises a result."
       />
       <div className="mt-12 space-y-6">
         {features.map((feature, index) => (

@@ -29,13 +29,13 @@ export const siteConfig = {
   name: "Aussie Citizenship",
   title: "Aussie Citizenship | Independent citizenship test study aid",
   description:
-    "Aussie Citizenship is an independent iPhone study aid for people preparing for the Australian citizenship test. The free version has 30 practice questions and 20-question mock exams. It is not affiliated with or endorsed by the Australian Government or the Department of Home Affairs.",
+    "Aussie Citizenship is an independent iPhone study aid. The app contains 500 practice questions. Version 1.0.0 makes 30 accessible and leaves 470 locked. Mock exams use 20 questions from the 30. It is not affiliated with, endorsed by, or operated by the Australian Government or the Department of Home Affairs.",
   url: resolveSiteUrl(process.env.NEXT_PUBLIC_SITE_URL),
   contactEmail: resolveEmail(process.env.NEXT_PUBLIC_CONTACT_EMAIL),
   locale: "en_AU",
   copyrightYear: 2026,
   lastReviewed: "24 November 2026",
-  effectiveDate: "Pending approval",
+  effectiveDate: "the public launch date of version 1.0.0",
   publisher: {
     legalName: "Duy Dam Ho",
     kind: "Individual / Sole Trader",

@@ -60,12 +60,27 @@ export default function ContactPage() {
         <h2 className="mt-8 text-lg font-semibold">You can write about</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-muted">
           <li>Questions about the website or the free iPhone app.</li>
-          <li>Privacy questions about this draft policy.</li>
+          <li>Privacy questions.</li>
           <li>Corrections to public website copy.</li>
         </ul>
         <p className="mt-6 text-sm leading-6 text-muted">
-          This page does not promise a reply time. Do not send identity
-          documents or citizenship application files to this address.
+          Aussie Citizenship is an independent educational application and is
+          not affiliated with, endorsed by, or operated by the Australian
+          Government or the Department of Home Affairs.
+        </p>
+        <h2 className="mt-8 text-lg font-semibold">The free app</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-muted">
+          <li>Version 1.0.0 is free. It has no advertising, no tracking, and no active purchase.</li>
+          <li>The app contains 500 practice questions. 30 are accessible. The other 470 stay locked.</li>
+          <li>A mock exam uses 20 questions drawn from those 30.</li>
+          <li>Settings includes Reset study progress. After you confirm, it clears scores, exam history, the streak, and the daily challenge. Language and dark mode stay as they are.</li>
+          <li>Send Feedback and Report a Question open an email you can edit. Nothing is sent until you send it. Scores and study history are not included.</li>
+        </ul>
+        <p className="mt-6 text-sm leading-6 text-muted">
+          Support and feedback messages are kept for a maximum of {siteConfig.emailRetention} after
+          the last message in the thread, unless a longer period is required by law. This page
+          applies from {siteConfig.effectiveDate}. Do not send identity documents or citizenship
+          application files to this address.
         </p>
       </div>
     </div>
